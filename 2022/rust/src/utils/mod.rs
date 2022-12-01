@@ -61,7 +61,7 @@ pub mod scanner {
             (0..n).map(|_| self.next::<T>()).collect()
         }
 
-        fn parse_next_line(&mut self) -> bool {
+        pub fn parse_next_line(&mut self) -> bool {
             let mut input = String::new();
             match &mut self.input_source {
                 InputSource::Stdin => {
