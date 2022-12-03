@@ -18,6 +18,8 @@ fn main() {
     for line in input.lines() {
         // Split line in half
         let (left, right) = line.split_at(line.len() / 2);
+
+        // Count the number of each character in the left half
         for c in left.chars() {
             *count_map.entry(c).or_insert(0) += 1;
         }
