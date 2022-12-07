@@ -1,15 +1,8 @@
 extern crate aoc2022;
 
-use std::ops::Add;
-
 use crate::aoc2022::utils::scanner::Scanner;
 use petgraph::{visit::Dfs, Graph};
 use rustc_hash::FxHashMap;
-
-struct Dir {
-    name: String,
-    file_size: u32,
-}
 
 fn main() {
     let input = std::fs::read_to_string("../data/in/7.in").unwrap();
