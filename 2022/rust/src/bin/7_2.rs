@@ -21,7 +21,7 @@ fn main() {
     idx_to_path.insert(node_idx, "/".to_string());
     path_to_idx.insert("/".to_string(), node_idx);
 
-    // Parse input of the form
+    // Parse input
     for line in input.lines() {
         command = line.split_ascii_whitespace().collect::<Vec<_>>();
         match (command[0], command[1]) {
